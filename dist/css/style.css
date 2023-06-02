@@ -115,7 +115,6 @@ main .movie .image_wrapper {
 main .movie .image {
   width: 100%;
   opacity: 0;
-  transform: translateY(10vh);
   transition: 1.4s all ease;
 }
 main .movie .image.is-visible {
