@@ -113,6 +113,7 @@ main .movie .image_wrapper {
   box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 main .movie .image {
+  width: 100%;
   opacity: 0;
   transform: translateY(10vh);
   transition: 1.4s all ease;
