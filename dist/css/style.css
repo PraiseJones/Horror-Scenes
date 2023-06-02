@@ -93,38 +93,79 @@ main .movie {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 54px 48px;
   color: #f0eff0;
 }
 main .movie .wrapper {
   display: flex;
   flex-direction: column;
   width: 86.44%;
-  height: 58%;
 }
 main .movie .wrapper .movie_header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 15px;
-  align-items: flex-end;
 }
 main .movie .wrapper .movie_header h4,
 main .movie .wrapper .movie_header h5 {
   color: #f0eff0;
 }
 main .movie .wrapper .movie_header h4 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin-bottom: 9px;
 }
 main .movie .wrapper .movie_header h5 {
   font-size: 12px;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
+main .movie .wrapper .rating {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+main .movie .wrapper .rating p {
+  font-size: 17px;
+  color: #831d16;
+}
+main .movie .wrapper .comment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+main .movie .wrapper .comment .firstp p {
+  text-transform: capitalize;
+  color: #831d16;
+  font-size: 17px;
+}
+main .movie .wrapper .comment .leavecom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .movie .wrapper .comment .leavecom i {
+  color: #831d16;
+  margin-right: 8px;
+}
+main .movie .wrapper .comment .leavecom p {
+  color: #831d16;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #831d16;
+}
+main .movie .wrapper .comment .leavecom i,
+main .movie .wrapper .comment .leavecom p {
+  font-size: 17px;
+}
+main .movie .wrapper .comment .leavecom:hover {
+  cursor: pointer;
+}
 main .movie .image_wrapper {
-  width: 100%;
-  height: 100%;
+  width: 582px;
+  height: 327px;
   box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(0, 0, 0, 0.2);
   position: relative;
   background-image: url("/assets/Images/static-5.jpg");
