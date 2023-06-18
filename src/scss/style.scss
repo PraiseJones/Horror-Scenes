@@ -1,6 +1,5 @@
 @import "_variables";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +10,12 @@
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
+  max-width: 100%;
 }
 
 body {
   height: 100vh;
-  font-family: 'Geologica', sans-serif;
+  font-family: "Geologica", sans-serif;
   background-color: $white;
 }
 
@@ -76,7 +76,7 @@ header {
         cursor: pointer;
         &:hover {
           opacity: 1;
-          color:#000;
+          color: #000;
           border-bottom: 1px solid #000;
         }
       }
@@ -85,7 +85,7 @@ header {
     p {
       font-size: 11px;
       font-weight: 700;
-      color:rgba(0,0,0,.5);
+      color: rgba(0, 0, 0, 0.5);
       margin-top: 20px;
       width: 21rem;
       text-align: left;
@@ -149,10 +149,9 @@ main {
         justify-content: flex-end;
         margin-top: 40px;
 
-        p{
+        p {
           font-size: 17px;
           color: #831d16;
-
         }
       }
 
@@ -161,8 +160,8 @@ main {
         justify-content: space-between;
         margin-top: 60px;
 
-        .firstp{
-          p{
+        .firstp {
+          p {
             text-transform: capitalize;
             color: #831d16;
             font-size: 17px;
@@ -194,17 +193,16 @@ main {
             cursor: pointer;
           }
         }
-
       }
     }
 
     .image_wrapper {
-      width: 582px;
-      height: 327px;
+      width: 100%;
+      height: 100%;
       box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
         inset 0 0 0 1px rgba(0, 0, 0, 0.2);
       position: relative;
-      background-image: url('/assets/Images/static-5.jpg');
+      background-image: url("/assets/Images/static-5.jpg");
       background-size: cover;
       background-position: center center;
 
@@ -224,17 +222,17 @@ main {
           text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
         }
       }
-    }
 
-    .image {
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: 1.8s all ease;
-    }
+      .image {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 1.8s all ease;
+      }
 
-    .image.is-visible {
-      opacity: 1;
+      .image.is-visible {
+        opacity: 1;
+      }
     }
   }
 }
